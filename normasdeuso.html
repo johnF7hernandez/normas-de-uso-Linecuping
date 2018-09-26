@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title>creacionarea</title>
+		<!--LLAMAMOS LA PAGINA DE FORMATO JAVA SCRIPT EN LA CUAL SE ALMACENA FUNCIONES JAVA SCRIPT ÚTILES PARA ESTOS FORMULARIOS--> 			
+		<script src="funciones.js"></script>
+		<!--FUNCIÓN UTILIZADA PARA VALIDAR EL FORMULARIO Y SUBMITIRLO-->
+		<script>
+					function validarcampos(){
+							if(document.creacionarea.codigoarea.value==""){
+									alert("¡Por favor ingresar el Código de área!");
+									document.creacionarea.codigoarea.focus();
+							}
+							else if(document.creacionarea.comboregional.value==""){
+									alert("¡Seleccionar no es una opción valida ¡Por favor ingrese una Región!");
+									document.creacionarea.departamentoareatext.focus();
+							}
+							else if(document.creacionarea.departamento1.value==""){
+									alert("¡Seleccionar no es una opción valida ¡Por favor ingrese un Departamento!");
+									document.creacionarea.departamento1.focus();
+							}
+							else if(document.creacionarea.ciudad1.value==""){
+									alert("¡Seleccionar no es una opción valida ¡Por favor ingrese una Ciudad!");
+									document.creacionarea.ciudad1.focus();
+							}
+							else if(document.creacionarea.localidadarea.value==""){
+									alert("¡Por favor ingresar la localida o comuna de ubicación del parqueadero!");
+									document.creacionarea.localidadarea.focus();
+							}
+							else if(document.creacionarea.barrioarea.value==""){
+									alert("¡Por favor ingresar el barrio donde se encuentra ubicado el parquedero!");
+									document.creacionarea.barrioarea.focus();
+							}
+							else if(document.creacionarea.sedearea.value==""){
+									alert("¡Por favor ingresar el nombre de la sede!");
+									document.creacionarea.sedearea.focus();
+							}
+							else if(document.creacionarea.cuposbici.value==""){
+									alert("¡Por favor ingresar el cupo maximo para bicicletas en el parqueadero!");
+									document.creacionarea.cuposbici.focus();
+							}
+							else if(document.creacionarea.cuposmoto.value==""){
+									alert("¡Por favor ingresar el cupo maximo para Motos en el parqueadero!");
+									document.creacionarea.cuposmoto.focus();
+							}
+							else if(document.creacionarea.cuposauto.value==""){
+									alert("¡Por favor ingresar el cupo maximo para Autos en el parqueadero!");
+									document.creacionarea.cuposauto.focus();
+							}
+
+							else{
+									//PREGUNTA PARA CONFIRMAR SI QUIERE O NO GUARDAR LOS DATOS
+									respuesta1 = confirm("Desea guardar los datos");
+									if(respuesta1){
+											//SUBMITE EL FORMULARIO PARA GUARDAR
+											document.creacionarea.submit();
+									}
+									else{
+											//SINO DEJE LOS DATOS COMO ESTÁN							
+									}			
+							}
+					}
+		</script>
+		
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!--LLAMAMOS LA PAGINA DE FORMATO DE ESTILOS EN LA CUAL SE ALMACENA LOS ESTILOS DE FUENTES ÚTILES PARA ESTE FORMULARIO-->
+		<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+				<!--
+				@import url("••/estilos/estilos.css");
+				-->							
+		</style>
+		<STYLE>
+		.
+			.menuitems {
+				PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+			}
+			body {
+				background-image: url(../img/fondo%20en%20proceso2.jpg);
+			}
+			.Estilo5 {font-size: 17px}
+			.Estilo7 {font-family: "Tw Cen MT Condensed"; font-size: 20px; }
+			.Estilo8 {font-family: "Tw Cen MT Condensed"; font-size: 18px; }
+        .Estilo11 {font-size: 17px; font-weight: bold; }
+        </STYLE>	
+	</head>
+<!-------------------------------------------------------------------------------------------------------->
+	<body >	
+		<form name="creacionarea" id="creacionarea" action="">
+		  <div align="center">
+		    <table width="800" height="150" bgcolor="#FFFFFF">
+					<tr>
+						<td height="144"align="center"class="Estilo5"><p><img src="../img/cabezote.jpg" width="811" height="129"></p></td>
+					</tr>
+		    </table>
+				<table width="819" bgcolor="#FFFFFF" >
+					<tr>
+						<td width="200">
+					  <!--SE LE ASIGNA EL VALOR AL CAMPO OCULTO CODIGODEAREA--></td>
+						<td colspan="2"><div align="center"><span class="Estilo7">...Politicas y Normas de Uso...</span></div></td>
+						<td width="200"><div align="right">
+					  <a href="pagentrada.html">		
+					  <img src="../botones/1webiniciof2.jpg" name="webentrada"  id="webentrada" onClick="cabiarboton('webentrada','1webiniciof2')"onMouseOver="cabiarboton('webentrada','2webiniciof2.jpg')" onMouseOut="cabiarboton('webentrada','1webiniciof2.jpg');"></a>
+					  <a href="politicadeuso.html">
+					  <img src="../botones/webinicio1.jpg" name="webinicio" border="0"  id="webinicio" onClick="cabiarboton('webinicio','webinicio1.jpg')"onMouseOver="cabiarboton('webinicio','webinicio2.jpg')" onMouseOut="cabiarboton('webinicio','webinicio1.jpg');"></a></div></td>
+					</tr>
+					<tr background="../img/pestañalicenciausolegal.jpg">
+					  <td height="30" colspan="4" background="../img/barranormasdeuso.jpg" class="Estilo8">&nbsp;</td>
+				  </tr>
+					<tr>
+					  <td height="23" class="Estilo8">&nbsp;</td>
+					  <td width="129" height="23" class="Estilo8">&nbsp;</td>
+					  <td width="270" class="Estilo8">&nbsp;</td>
+					  <td height="23" class="Estilo8">&nbsp;</td>
+				  </tr>
+					<tr>
+					  <td height="23" colspan="4" class="Estilo8"><div align="center" class="Estilo7">
+					    <p align="justify">Normas de Uso: </p>
+					    <p align="justify">Uso de la membres&iacute;a del parqueadero </p>
+					    <p align="justify" class="Estilo5">La cuenta del usuario (aprendiz, instructores, personal administrativo y personal log&iacute;stico) solo es para registrar y dar uso de parqueo a los miembros antes mencionados e invitados autorizado, dicho esto la cuenta no debe ser usada para registrar o hacer uso del parqueadero mediante el sistema linecuping a personas particulares.</p>
+					    <p align="justify"><span class="Estilo5">La membres&iacute;a permite registrar un m&aacute;ximo de tres veh&iacute;culos (bicicleta, Moto, Autom&oacute;vil) por usuario, pero solo permite el uso del sistema para parquear uno de los tres. </span></p>
+					    <p align="justify">Penalizaciones por uso indebido.</p>
+					    <p align="justify" class="Estilo5">Si el usuario, no hace un uso correcto o no respeta la normas establecidas para el uso del parqueadero, el sistema Linecuping generara un estado del usuario indicando que esta bajo penalizaci&oacute;n, cuya penalizaci&oacute;n es el restringir el uso del parqueadero. Dicho tiempo de restricci&oacute;n queda bajo la determinaci&oacute;n del coordinador de sede. </p>
+					    <p align="justify" class="Estilo5">Las normas a respetar son las siguientes:</p>
+					    <p align="justify" class="Estilo5">No parquear en las v&iacute;as de trafico dentro del parqueadero, las cuales est&aacute;n se&ntilde;alizadas.</p>
+					    <p align="justify" class="Estilo5">Hacer ingreso del veh&iacute;culo (bicicleta, moto, autom&oacute;vil) sin hacer el debido proceso de registro en el sistema Linecuping.</p>
+					    <p align="justify" class="Estilo5">Ocupar sectores no determinados en el parqueadero para el veh&iacute;culo (bicicleta, moto, autom&oacute;vil) por ejemplo, parquear una moto en el sector de las bicicletas sin ser autorizado.</p>
+					    <p align="justify">Responsabilidades del SENA.</p>
+					    <p align="justify" class="Estilo5">El SENA, no se hace responsable por perdidas de veh&iacute;culos u objetos, relacionados con el usuario; debido a que el servicio de parqueadero se hace sin animo de lucro. No diciendo con esto que el servicio esta para prestarse con la mayor eficiencia y responsabilidad que se pueda brindar.</p>
+					    </div></td>
+				  </tr>
+		    </table>
+		  </div>
+		</form>
+	</body>
+</html>
